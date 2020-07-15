@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.user.oneshop.Contact"
+    tools:showIn="@layout/activity_contact"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_above="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/contact" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="48dp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/insta" />
+
+        <ImageView
+            android:layout_marginTop="234dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <ImageView
+            android:layout_marginTop="234dp"
+            android:layout_marginLeft="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp" />
+        <ImageView
+            android:layout_marginTop="234dp"
+            android:layout_marginLeft="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_place_black_24dp" />
+
+        <ImageView
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="39dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fb" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view" />
+
+
+    <ImageView
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_place_black_24dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="313dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="13dp"
+        android:text="Address : Banarupa, Rangamati"
+        />
+
+    <ImageView
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_public_black_24dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="343dp"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+        android:textSize="13dp"
+        android:text="Email : oneshop33@gmail.com"
+        android:id="@+id/textView_email"
+        />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/darker_gray" />
+
+
+
+
+
+</RelativeLayout>
