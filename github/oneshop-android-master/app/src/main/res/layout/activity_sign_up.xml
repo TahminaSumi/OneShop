@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/button_sign_up"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_button_orrange"
+                android:text="@string/Sign"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edittext_email"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/edittext_email"
+                app:layout_constraintTop_toBottomOf="@id/edittext_email"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/edittext_first_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toStartOf="@+id/edittext_last_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_first_name_hint" />
+
+            <EditText
+                android:id="@+id/edittext_current_address"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/edittext_phone_number"
+                app:layout_constraintStart_toEndOf="@+id/appcompatspinner_district"
+                app:layout_constraintTop_toBottomOf="@+id/textview_current_address_hint" />
+
+            <EditText
+                android:id="@+id/edittext_last_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/edittext_first_name"
+                app:layout_constraintTop_toBottomOf="@+id/textview_last_name_hint" />
+
+            <EditText
+                android:id="@+id/edittext_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="phone"
+                android:paddingStart="5dp"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="@+id/edittext_last_name"
+                app:layout_constraintStart_toStartOf="@+id/textview_phone_hint"
+                app:layout_constraintTop_toBottomOf="@+id/textview_phone_hint" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textview_email_hint"
+                app:layout_constraintTop_toBottomOf="@+id/textview_email_hint" />
+
+            <TextView
+                android:id="@+id/textview_current_address_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Cadd"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="@+id/edittext_current_address"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_phone_number" />
+
+            <TextView
+                android:id="@+id/textview_email_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/email"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="@+id/appcompatspinner_district"
+                app:layout_constraintTop_toBottomOf="@+id/appcompatspinner_district" />
+
+            <TextView
+                android:id="@+id/textview_first_name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/Fname"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_last_name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/Lname"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="@+id/edittext_last_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_district_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Dist"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="@+id/edittext_phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_phone_number" />
+
+            <TextView
+                android:id="@+id/textview_phone_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/phone"
+                android:textColor="@color/brown"
+                app:layout_constraintStart_toStartOf="@+id/edittext_first_name"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_first_name" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/appcompatspinner_district"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/edittext_current_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_district_hint" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageview_sign_up_exit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_close_orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textview_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageview_sign_up_exit"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.533" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

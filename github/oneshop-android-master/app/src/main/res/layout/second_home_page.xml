@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity"
+        tools:ignore="InvalidId">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/textView_categories"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="8dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="8dp"
+               android:text="Categories"
+               android:textSize="16dp"
+               android:layout_marginLeft="10dp" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="8dp"
+               android:text="Shops"
+                android:textSize="16dp"
+
+               />
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_toolbar"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:weightSum="10">
+
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_weight="1.3"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_looks_one_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="333dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="#f2f2f2"
+                android:queryHint="what would you like to buy?" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_secondhome_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <ImageView
+                    android:id="@+id/iv_secondhome_image"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="280dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/shirt_col"
+
+                    />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Products"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff6600"
+            android:id="@+id/view" />
+
+
+        <LinearLayout
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--      <TextView
+                          android:text="All Products"
+                          android:textStyle="bold"
+                          android:textSize="16sp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content" />  -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_recent_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
